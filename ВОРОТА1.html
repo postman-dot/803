@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <title>803</title>
+  <style>
+    .qwe {
+      width: 200px;
+      height: 50px;
+      background: green;
+      border: yes;
+      color: white;
+    }
+    .text-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  </style>
+
+  <body>
+    <div style="text-align: center" class="text-container">
+      <p>
+        — Приветствую тебя, странник, — говорит голос. — Ты стоишь перед магией, которая поможет
+        тебе найти ответы. Чтобы ворота открылись, тебе нужно ответить на вопросы. Эти вопросы не
+        простые, но они помогут тебе вспомнить, кто был рядом с тобой, кто делил с тобой этот мир.
+        Ответишь правильно — ворота откроются. ВОПРОС 1: КАКОЙ ПОРОДЫ ЭТОТ ЗВЕРЬ?
+      </p>
+
+      <img src="ЖУЛ.JPG" alt="" width="400" />
+
+      <form action="./ВОРОТА2.html">
+        <input type="submit" class="qwe" value="ШОТЛАНДСКАЯ" />
+
+        <button type="button" class="qwe" onclick="window.myDialog.showModal()">АБИССИНСКАЯ</button>
+        <dialog id="myDialog">
+          Попробуй еще разок!<br />
+          <button type="button" onclick="window.myDialog.close()">Закрыть</button>
+        </dialog>
+        <button type="button" class="qwe" onclick="window.myDialog2.showModal()">БРИТАНСКАЯ</button>
+        <dialog id="myDialog2">
+          Попробуй еще разок!<br />
+          <button type="button" onclick="window.myDialog2.close()">Закрыть</button>
+        </dialog>
+        <button type="button" class="qwe" onclick="window.myDialog3.showModal()">СФИНКС</button>
+        <dialog id="myDialog3">
+          Попробуй еще разок!<br />
+          <button type="button" onclick="window.myDialog3.close()">Закрыть</button>
+        </dialog>
+      </form>
+    </div>
+  </body>
+</html>

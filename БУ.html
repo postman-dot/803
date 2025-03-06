@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <title>803</title>
+  <style>
+    .qwe {
+      width: 200px;
+      height: 50px;
+      background: green;
+      border: yes;
+      color: white;
+    }
+    .text-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  </style>
+
+  <body>
+    <div style="text-align: center" class="text-container">
+      <p>
+        Ты медленно встаёшь с кровати, чувствуешь, как всё тело протестует, и направляешься к
+        компьютеру. На экране тускло светится папка с названием "Работа". Такое простое, такое
+        банальное имя. Внутри тебя что-то дергается, когда ты кладешь пальцы на клавиши, и
+        открываешь её. Ты жмёшь на папку, и перед глазами появляется единственный файл — видео.
+        Просто «Видео_1». Никаких дополнительных подсказок, никаких дат или названий. Просто видео.
+        Ты не знаешь, зачем, но твои руки сами тянутся к клавишам. Нажимаешь. Слушаешь, как
+        компьютер начинает открывать файл.
+      </p>
+
+      <video controls width="1000">
+        <source src="./БУ.MOV" />
+      </video>
+
+      <form action="./БУ2.html">
+        <input type="submit" class="qwe" value="5" />
+
+        <button type="button" class="qwe" onclick="window.myDialog.showModal()">6</button>
+        <dialog id="myDialog">
+          Попробуй еще разок!<br />
+          <button type="button" onclick="window.myDialog.close()">Закрыть</button>
+        </dialog>
+        <button type="button" class="qwe" onclick="window.myDialog2.showModal()">3</button>
+        <dialog id="myDialog2">
+          Попробуй еще разок!<br />
+          <button type="button" onclick="window.myDialog2.close()">Закрыть</button>
+        </dialog>
+        <button type="button" class="qwe" onclick="window.myDialog3.showModal()">4</button>
+        <dialog id="myDialog3">
+          Попробуй еще разок!<br />
+          <button type="button" onclick="window.myDialog3.close()">Закрыть</button>
+        </dialog>
+      </form>
+    </div>
+  </body>
+</html>
